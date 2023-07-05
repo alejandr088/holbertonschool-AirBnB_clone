@@ -6,11 +6,17 @@ from datetime import datetime
 
 class BaseModel:
     """define BaseModel class"""
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """initialize class"""
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()
+        if kwargs is not None or len(kwargs) != 0:
+            kwargs = self.__name__
+            
+        else:
+            self.id = str(uuid.uuid4())
+            self.created_at = datetime.now()
 
     def __str__(self):
         """print string"""
