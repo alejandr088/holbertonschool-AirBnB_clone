@@ -1,13 +1,14 @@
 #!/usr/bin/python3
+"""module containing BaseModel class"""
 import uuid
 from datetime import datetime
 from models import storage
 from models.engine.file_storage import FileStorage
-"""BaseModel module"""
 
 
 class BaseModel:
     """define BaseModel class"""
+
     def __init__(self, *args, **kwargs):
         """initialize class"""
         self.id = str(uuid.uuid4())
