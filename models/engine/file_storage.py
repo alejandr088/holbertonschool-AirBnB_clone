@@ -8,7 +8,7 @@ class FileStorage:
     """define FileStorage class"""
     __file_path = "file.json"
     __objects = {}
-    
+
     def all(self):
         """return the dictionary __objects"""
         return FileStorage.__objects
@@ -29,7 +29,6 @@ class FileStorage:
     def reload(self):
         """deserialize the JSON file"""
         from models.base_model import BaseModel
-
 
         if os.path.exists(self.__file_path):
             with open(self.__file_path, 'r', encoding="utf-8") as f:
