@@ -15,7 +15,7 @@ from models import storage
 class HBNBCommand(cmd.Cmd):
     """Define class"""
     prompt = "(hbnb) "
-    classes = ["BaseModel", "User", "State", 
+    classes = ["BaseModel", "User", "State",
                "City", "Amenity", "Place", "Review"]
 
     def do_EOF(self, arg):
