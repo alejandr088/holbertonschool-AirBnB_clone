@@ -19,7 +19,7 @@ First of all the users must have all the files included in the project, to do so
 Then the user must be located on the base folder where the project files are located, which is "holbertonschool-AirBnB_clone".
 
 ## Start with the Command Interpreter
-Bring execution permissions to console file with `chmod +x (console.py)`
+Bring execution permissions to console file with `chmod +x console.py`
 then execute: `./console.py`
 
 
@@ -37,9 +37,9 @@ Once the command interpreter is running, you can enter commands to perform vario
 To execute a command, type the command name followed by any required arguments. The syntaxis is as follows:
 
 - `[command] [class] [attributes(if needed)]`
-- [command]: The name of the command you want to execute (e.g., create, show, destroy, update, all).
-- [class]: The name of the class you want to perform the command on (e.g., User, State, City, etc.).
-- [attributes] (if needed): Additional attributes or values required for specific commands (e.g., email, password for the create command).
+* [command]: The name of the command you want to execute (e.g., create, show, destroy, update, all).
+* [class]: The name of the class you want to perform the command on (e.g., User, State, City, etc.).
+* [attributes] (if needed): Additional attributes or values required for specific commands (e.g., email, password for the create command).
 
 ## Examples
 - `create BaseModel`
