@@ -1,4 +1,7 @@
-===<<< holbertonschool-AirBnB_clone - The Console >>>===
+# ===<<< holbertonschool-AirBnB_clone - The Console >>>===
+
+## Description
+The HBNB Console is based on the BaseModel class, which serves as the foundation for all other classes. It uses a file-based storage system to persist data, with instances stored in a JSON file.
 
 ## Objetives
 In this program we have to write a command interpreter to manage our AirBnB objects.
@@ -46,7 +49,5 @@ this command will delete the selected instance by ID.
 - quit
 this command will quit the program.
 
-
-
 NOTE: this program perform EOF handling correctly.
-NOTE 2: all the program unittest tests passed w/o error.s
+
