@@ -41,7 +41,15 @@ class test_BaseModel(unittest.TestCase):
         b1 = BaseModel()
         new_dict = b1.to_dict()
         self.assertIsInstance(new_dict, dict)
+        self.assertIsInstance(new_dict["id"], str)
+        self.assertIsInstance(new_dict["created_at"], str)
+        self.assertIsInstance(new_dict["updated_at"], str)
     
+    def test_str(self):
+        """check str method"""
+        b1 = BaseModel()
+        string = f"[{b1.__class__.__name__}] ({b1.id}) {b1.__dict__}"
+        self.assertEqual(str(b1), string)
 
     if __name__ == "__main__":
             unittest.main()
