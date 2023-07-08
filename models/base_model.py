@@ -26,7 +26,11 @@ class BaseModel:
 
     def __str__(self):
         """print string"""
-        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+        return "[{}] ({}) {}".format(
+            self.__class__.__name__,
+            self.id,
+            self.__dict__
+        ).replace('"', "")
 
     def save(self):
         """updates updated_at with the current datetime"""
