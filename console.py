@@ -108,10 +108,11 @@ class HBNBCommand(cmd.Cmd):
         if not arg:
             print([str(instance) for instance
                   in storage.all().values()])
-        if inpt[0] not in HBNBCommand.classes:
+        elif inpt[0] not in HBNBCommand.classes:
             print("** class doesn't exist **")
             return
-        print([str(instance) for key, instance
+        else:
+            print([str(instance) for key, instance
               in storage.all().items() if arg[0] in key])
 
 
