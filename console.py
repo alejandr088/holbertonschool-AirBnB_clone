@@ -113,7 +113,7 @@ class HBNBCommand(cmd.Cmd):
             return
         else:
             print([str(instance) for key, instance
-              in storage.all().items() if arg[0] in key])
+            in storage.all().items() if arg[0] in key])
 
 
 if __name__ == '__main__':
